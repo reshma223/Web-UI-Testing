@@ -1,0 +1,46 @@
+Test Environment Setup
+Ensure you have the following installed:
+✅ Python (latest version recommended)
+✅ Selenium WebDriver (pip install selenium)
+✅ WebDriver for the chosen browser (ChromeDriver, GeckoDriver, etc.) (pip install webdriver-manager)
+✅ PyTest (pip install pytest pytest-html) for structured test execution
+
+Setting Up a Virtual Environment (venv)
+🔹 Step 1: Create a Virtual Environment
+python -m venv selenium_env
+This creates a new environment named selenium_env.
+🔹 Step 2: Activate the Virtual Environment
+selenium_env\Scripts\activate
+🔹 Step 3: Install Selenium & Dependencies
+pip install selenium webdriver-manager pytest pytest-html
+When you're done, deactivate the environment:
+deactivate
+
+Running Tests & Generating Reports
+Use PyTest for structured execution:
+pytest test_mindrisers.py --html=report.html
+
+Generates a detailed HTML test report (report.html).
+Captures screenshots on failure for debugging.
+
+Test Automation Of following:
+1. Home Page Load- Ensure the website loads correctly with no errors.
+2. Navigation Bar Links- Click on each menu item (Home, Courses, About Us, Contact Us) and verify redirection.
+3. Course Listing Page-	Ensure courses are displayed correctly with titles, images, and links.
+4. Course Details Page-	Click on a course and verify details are displayed.
+5. Search Functionality- Test search with valid/invalid keywords and verify results.
+6. Contact Form Submission-	Fill in the form with valid/invalid inputs and verify success/error messages.
+7. Footer Links & Social Media Buttons- Check if links redirect to the correct pages.
+
+ UI Testing
+✅ Validate CSS styles, images, fonts, and alignment.
+✅ Check for broken links and missing elements.
+
+🔹 Cross-Browser Testing
+✅ Run tests on Chrome, Firefox, and Edge.
+
+Enhancements
+1️⃣ User Authentication Testing → If login exists, automate login/logout.
+2️⃣ Form Validation → Test with empty fields, invalid emails, etc.
+3️⃣ Mobile Testing → Run tests with Selenium Grid for different screen sizes.
+4️⃣ Performance Testing → Use Selenium with JMeter for load testing.
