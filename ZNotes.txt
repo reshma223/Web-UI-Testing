@@ -44,3 +44,30 @@ Enhancements
 2️⃣ Form Validation → Test with empty fields, invalid emails, etc.
 3️⃣ Mobile Testing → Run tests with Selenium Grid for different screen sizes.
 4️⃣ Performance Testing → Use Selenium with JMeter for load testing.
+
+-Commit Commit
+git status
+git add .
+git commit -m ""
+git remote add origin https://github.com/your-username/your-repo.git
+git push origin main
+-To add specific file 
+git add filename.ext
+-Check current branch
+git branch
+-Create branch named
+git branch branch-name
+-Switch to a branch
+git checkout branch-name
+-Create and Switch to a New Branch (Shortcut)
+git checkout -b branch-name
+-Merge a Branch into main
+git checkout main  # Switch to main
+git merge branch-name  # Merge the branch
+-Delete a Branch
+-Delete a local branch after merging:
+git branch -d branch-name
+-Force delete a branch (if it's not merged yet):
+git branch -D branch-name
+-Delete a remote branch:
+git push origin --delete branch-name
