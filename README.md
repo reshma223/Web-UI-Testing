@@ -1,2 +1,2 @@
-See ZNotes for any confusion.
-Everything describe under ZNotes
+See ZNotes.txt for any confusion.
+Everything describe under ZNotes.txt
