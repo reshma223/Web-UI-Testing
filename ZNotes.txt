@@ -45,6 +45,10 @@ Enhancements
 3️⃣ Mobile Testing → Run tests with Selenium Grid for different screen sizes.
 4️⃣ Performance Testing → Use Selenium with JMeter for load testing.
 
+Check if the Locator is Incorrect
+link_element = driver.find_element(By.XPATH, "")
+print(link_element)  
+
 -Commit Commit
 git status
 git add .
