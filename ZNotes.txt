@@ -46,8 +46,21 @@ Enhancements
 4️⃣ Performance Testing → Use Selenium with JMeter for load testing.
 
 Check if the Locator is Incorrect
-link_element = driver.find_element(By.XPATH, "")
-print(link_element)  
+-link_element = driver.find_element(By.XPATH, "")
+-print(link_element)
+
+Fake Data Filler
+-pip install faker
+-from faker import Faker
+-fake = Faker()  //initialized
+-fake_name = fake.name()
+-driver.find_element(By.NAME, "name").send_keys(fake_name)
+fake.name()           # e.g., 'John Smith'
+fake.email()          # e.g., 'john.smith@example.com'
+fake.phone_number()   # e.g., '+1-541-754-3010'
+fake.date_of_birth()  # e.g., '1995-04-03'
+fake.company()        # e.g., 'Acme Inc'
+fake.user_name()      # e.g., 'john_smith_91'
 
 -Commit Commit
 git status
